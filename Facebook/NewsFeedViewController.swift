@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewsFeedViewController: UIViewController {
+class NewsFeedViewController: UIViewController, UIViewControllerTransitioningDelegate {
 	
 	var selectedImageView: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -23,12 +23,15 @@ class NewsFeedViewController: UIViewController {
 	@IBOutlet var tapImageThree: UITapGestureRecognizer!
 	@IBOutlet var tapImageFour: UITapGestureRecognizer!
 	@IBOutlet var tapImageFive: UITapGestureRecognizer!
-
+	var weddingImages: [UIImageView]!
+	
 	var photoTransition : PhotoTransition!
+	var imageNumber: Int!
 	
 	
     override func viewDidLoad() {
         super.viewDidLoad()
+		weddingImages = [weddingOneImage, weddingTwoImage, weddingThreeImage, weddingFourImage, weddingFiveImage]
 
         // Configure the content size of the scroll view
         scrollView.contentSize = CGSizeMake(320, feedImageView.image!.size.height)
@@ -49,13 +52,19 @@ class NewsFeedViewController: UIViewController {
     }
 	
 	@IBAction func didTapPhoto(sender: UITapGestureRecognizer) {
+		for (var i = 0; i < 5; i++){
+			if weddingImages[i] == sender.view{
+				imageNumber = i
+			}
+		}
 		
 		selectedImageView = sender.view as! UIImageView
 		performSegueWithIdentifier("photoSegue", sender: self)
 	}
 	
+	
 	override func prepareForSegue(segue: (UIStoryboardSegue!), sender: AnyObject?) {
-		var newsFeedViewController = segue.sourceViewController as! UIViewController
+		//var newsFeedViewController = segue.sourceViewController as! UIViewController
 		var photoViewController = segue.destinationViewController as! PhotoViewController
 		var identifier = segue.identifier
 		photoViewController.imageView = selectedImageView.image
@@ -63,6 +72,7 @@ class NewsFeedViewController: UIViewController {
 		
 		photoTransition = PhotoTransition()
 		photoTransition.duration = 0.5
+		photoTransition.newsFeedViewController = self
 		
 		photoViewController.transitioningDelegate = photoTransition
 		

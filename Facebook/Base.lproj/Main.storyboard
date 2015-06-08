@@ -497,13 +497,86 @@
             <objects>
                 <viewController id="Xuk-An-ueR" customClass="PhotoViewController" customModule="Facebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ong-Oq-EXq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1600" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="xPp-Zr-hg7">
-                                <rect key="frame" x="0.0" y="60" width="320" height="464"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" maximumZoomScale="3" id="4tX-ND-QjT">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="aEh-j2-tji">
+                                        <rect key="frame" x="-40" y="0.0" width="320" height="569"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="xPp-Zr-hg7">
+                                        <rect key="frame" x="0.0" y="60" width="320" height="464"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="n8V-Qw-8ck" userLabel="imageScrollView">
+                                        <rect key="frame" x="0.0" y="60" width="1600" height="464"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view clipsSubviews="YES" contentMode="scaleAspectFill" id="8AR-Tz-M5G" userLabel="viewOne">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="564"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding1" id="Kak-x3-Nl9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="464"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleAspectFill" id="mjr-k4-rla" userLabel="viewTwo">
+                                                <rect key="frame" x="320" y="0.0" width="320" height="564"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="wedding2" id="NlV-br-acd">
+                                                        <rect key="frame" x="-188" y="0.0" width="696" height="464"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" id="H6D-SO-TSL" userLabel="viewThree">
+                                                <rect key="frame" x="640" y="0.0" width="320" height="564"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding3" id="Rfq-Uh-qzA">
+                                                        <rect key="frame" x="-188" y="0.0" width="696" height="464"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleAspectFill" id="0zj-RS-fXu" userLabel="viewFour">
+                                                <rect key="frame" x="960" y="0.0" width="320" height="564"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding4" id="lT7-8U-9d6">
+                                                        <rect key="frame" x="-188" y="0.0" width="696" height="464"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleAspectFill" id="4rq-Ad-vHB" userLabel="viewFive">
+                                                <rect key="frame" x="1280" y="0.0" width="320" height="564"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="wedding5" id="bvQ-4G-oe7">
+                                                        <rect key="frame" x="-188" y="0.0" width="696" height="464"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rFk-d9-AfD">
                                 <rect key="frame" x="263" y="20" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -516,15 +589,25 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1600" height="568"/>
                     <connections>
-                        <outlet property="weddingImage" destination="xPp-Zr-hg7" id="RE7-NE-3Qx"/>
+                        <outlet property="doneButton" destination="rFk-d9-AfD" id="0Zn-bx-H04"/>
+                        <outlet property="imageScrollView" destination="n8V-Qw-8ck" id="4uU-OO-q2g"/>
+                        <outlet property="scrollView" destination="4tX-ND-QjT" id="K97-N7-389"/>
+                        <outlet property="scrollViewContent" destination="aEh-j2-tji" id="RBi-MF-ZMB"/>
+                        <outlet property="weddingImageFive" destination="bvQ-4G-oe7" id="OuT-Su-fOJ"/>
+                        <outlet property="weddingImageFour" destination="lT7-8U-9d6" id="YLa-z8-EpV"/>
+                        <outlet property="weddingImageOne" destination="Kak-x3-Nl9" id="Nxy-x9-bzD"/>
+                        <outlet property="weddingImageThree" destination="Rfq-Uh-qzA" id="cz7-Rd-ZTL"/>
+                        <outlet property="weddingImageTwo" destination="NlV-br-acd" id="GfT-YZ-i1X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JC1-RJ-QWP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-490" y="3087"/>
+            <point key="canvasLocation" x="114" y="3080"/>
         </scene>
         <!--News Feed-->
         <scene sceneID="TWc-UL-gYc">
