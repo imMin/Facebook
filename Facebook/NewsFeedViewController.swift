@@ -26,7 +26,8 @@ class NewsFeedViewController: UIViewController, UIViewControllerTransitioningDel
 	var weddingImages: [UIImageView]!
 	
 	var photoTransition : PhotoTransition!
-	var imageNumber: Int!
+	var selectedImageNumber: Int!
+	var currentImageNumber: Int!
 	
 	
     override func viewDidLoad() {
@@ -54,7 +55,8 @@ class NewsFeedViewController: UIViewController, UIViewControllerTransitioningDel
 	@IBAction func didTapPhoto(sender: UITapGestureRecognizer) {
 		for (var i = 0; i < 5; i++){
 			if weddingImages[i] == sender.view{
-				imageNumber = i
+				selectedImageNumber = i
+				currentImageNumber = i 
 			}
 		}
 		

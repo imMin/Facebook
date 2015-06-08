@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>2C5B894B-27AA-4841-9722-76BB133BC672</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Facebook</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>BD9F71F43E28052F260693D6D0ED061ACA8B6BFF</key>
 		<string>https://github.com/uxmin/Facebook.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Facebook.xcodeproj/project.xcworkspace</string>
+	<string>Facebook.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>BD9F71F43E28052F260693D6D0ED061ACA8B6BFF</key>
