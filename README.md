@@ -16,12 +16,6 @@ Not completely working: Optional: The full screen photo should be zoomable.
 
 Zooming worked when I didn't implement page through the photos. However it got messed up after I implemented the scroll view for paging. I didn't figure out how to fix that. 
 
-GIF walkthrough of all user stories:
-
-![Video Walkthrough](https://github.com/uxmin/Carousel/blob/master/CarouselWalkthrough.gif)
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/)
-
 
 GIF walkthrough of all user stories:
 
